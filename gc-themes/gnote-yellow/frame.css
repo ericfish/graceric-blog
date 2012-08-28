@@ -1,0 +1,160 @@
+  #g_title p, #g_footer p, #g_description p {
+    margin: 0;
+  }
+  /*
+
+  	-- -- -- -- -- -- --
+  	Browser Fixes
+  	-- -- -- -- -- -- --
+  	
+  	This file uses CSS filtering methods to fix various
+  	layout bugs.
+
+  	Each of the following three imported files is a 
+  	separate, browser-specific CSS file that keeps all 
+  	hacks out of the main style sheet.
+  	
+  	Over time, as supporting these browsers no longer
+  	remains a priority, cleaning up the hacks is as
+  	easy as deleting the @import statement below, or
+  	simply no longer linking this file from the HTML.
+  	
+  */
+
+  /* 
+    fix ie6 "peekaboo bug" using the "holly hack". 
+    Note, this style only gets applied to ie6
+  */
+  * html .wrapper {
+    height: 0.1%;
+  }
+
+  /* 
+   * IE5 mac - overrides the IE/Win hack 
+   */
+
+  /*\*//*/
+
+  * html #threecolumn div {
+  	height: auto;
+  }
+
+  /**/
+
+
+  /* 
+   * IE5/Win-specific CSS -ensures #container wraps all content on window resize
+   */
+
+  @media tty {
+   i{content:"\";/*" "*/}} * html #container { height: 1%; } /*";}
+  }/* */
+  /* Styling for editable elements. Eventually, this will be part of the style. */
+  .editable {
+    border: 1px dashed blue;
+  }
+  
+  #footer {
+    clear: both;
+  }
+  
+  /* Extra divs hidden by default. The custom CSS can override this though */
+  #extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+    display: none;
+  }
+  
+  a img,:link img,:visited img {border: none;}
+
+  body {
+    text-align: center;
+  }
+  #container {
+    width: 718px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  #main-content {
+    float: right;
+    width: 470px;
+  }
+  #sidebar {
+    float: right;
+    width: 230px;
+    text-align: left;
+  }
+  #footer {
+    clear: both;
+  }
+  /** BEGIN CUSTOM SKIN **/
+    dl,li,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin: 0; padding: 0;}
+    a img,:link img,:visited img {border: none;}
+    address {font-style: normal;}
+    
+    body { font-size: 62.5%; font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.2; }
+    #header, #main-content, #sidebar, #footer { font-size: 1.2em; }
+    h1,h2,h3,h4,h5,h6,pre,code,p { font-weight: normal; }
+    h1,h2,h3,h4,h5,h6 { font-family: "Times New Roman", Times, serif; margin: 0.5em 0; }
+    ul,ol { padding-left: 20px; }
+    * html ul, * html ol { padding-left: 0; }
+    p { text-indent: 1.2em; }
+    h1 { font-size: 3em; font-variant: small-caps; margin: 0 0 0.25em; padding: 0.5em 0 0.25em; }
+    h2 { font-size: 2em; font-style: italic; letter-spacing: -0.03em; padding-bottom: 0.2em; }
+    h3 { font-size: 1.5em; font-variant: small-caps; padding-bottom: 0.3em; }
+    h4 { font-size: 1.25em; font-style: italic; letter-spacing: -0.03em; font-weight: bold; margin: 1em 0 0.8em; }
+    h5 { font-size: 1.25em; font-weight: bold; letter-spacing: -0.03em; margin: 1em 0; }
+    h6 { font-size: 1.25em; font-style: italic; letter-spacing: -0.03em; margin: 1em 0; }
+    input, select, th, td { font-size: 1em; }
+    caption, th { font-weight: bold; }
+    caption { padding: 0.5em; }
+    th,td { padding: 0.5em; }
+    table p { text-indent: 0; }
+    #container { width: 750px; }
+    #header { padding: 0 50px 50px; }
+    #main-content { padding: 0 65px 0 0; margin-bottom: 1em; }
+    #threecolumn #main-content { float:right; width: 360px; padding: 0 15px 0 0; }
+    #twocolumn-right #main-content { width: 405px; padding: 0 20px 0 70px; }
+    #twocolumn-left #main-content { width: 405px; }
+    #onecolumn #main-content { padding: 0 70px 0 68px; }
+    #sidebar, #sidebar-alternate { padding: 0 20px 0 0; margin-bottom: 1em; }
+    #threecolumn #sidebar { float: right; width: 115px; padding: 0 65px 0 0; }
+    #twocolumn-right #sidebar { width: 185px; padding: 0; }
+    #twocolumn-left #sidebar { width: 185px; }
+    #threecolumn #sidebar-alternate { width: 115px; padding: 0 0 0 65px; }
+    #g_description { text-align: right; }
+    #footer hr { visibility: hidden; }
+    #footer { width: 405px; float: right; margin: 1em 65px 1em 0; font-style: italic; }
+    #threecolumn #footer { width: 470px; text-align: center; text-indent: 0; }
+    #twocolumn-right #footer { width: 405px; float: left; margin-left: 65px; }
+    #onecolumn #footer { width: 595px; text-align: center; text-indent: 0; }
+  
+    /* IE6 */
+    * html #header {margin-left:2px;}
+    * html #threecolumn #sidebar-alternate {margin-left: 0px;}
+    * html #threecolumn #container {padding-left:30px;}
+    * html #twocolumn-right #footer {margin-left: 35px;}
+    * html #twocolumn-left #footer, * html #onecolumn #footer {margin-right: 35px;}
+  
+    body { background: #CFD5E3 url(pic/tile.jpg) top center repeat-y; }
+    body#threecolumn { background: #CFD5E3 url(pic/tile-threecolumn.jpg) top center repeat-y; }
+    body#twocolumn-right { background: #CFD5E3 url(pic/tile-twocolumn-right.jpg) top center repeat-y; }
+    body#onecolumn { background: #CFD5E3 url(pic/tile-onecolumn.jpg) top center repeat-y; }
+    #header, #main-content, #sidebar, #footer { color: #2A3B64; }
+    p,li,dl,td { color: #333; }
+    a:link { color: #0036B3; }
+    a:visited { color: #6900B3; }
+    a:link:hover, a:visited:hover { color: #003F5C; }
+    ul { list-style: url(pic/bullet.gif); }
+    img { margin: 1px; border: 0px; }
+    h1 { background: url(pic/underline-h1.gif) bottom center no-repeat; color: #435682; }
+    h2,h3 { background: url(pic/underline.gif) bottom left no-repeat; }
+    #onecolumn h2, #onecolumn h3 { background: url(pic/underline-onecolumn.gif) bottom center no-repeat; }
+    caption { background: #CFD5E3; }
+    th { border-bottom: 1px solid #CFD5E3; }
+    table { border: 1px solid #CFD5E3; }
+    #header { background: url(pic/header.jpg) bottom center no-repeat; }
+    #threecolumn #header { background: url(pic/header-threecolumn.jpg) bottom center no-repeat; }
+    #twocolumn-right #header { background: url(pic/header-twocolumn-right.jpg) bottom center no-repeat; }
+    #onecolumn #header { background: url(pic/header-onecolumn.jpg) bottom center no-repeat; }
+    #footer { background: url(pic/underline.gif) top center no-repeat; }  
+
+  /** END CUSTOM SKIN **/

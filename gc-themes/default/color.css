@@ -1,0 +1,215 @@
+BODY {
+	BACKGROUND-COLOR: #fff
+}
+P.title {
+	FONT: bold 9px/1.5 Verdana, Arial; COLOR: #000000; LETTER-SPACING: 0.02em
+}
+P {
+	FONT: 13px/1.5 Verdana, Arial; COLOR: #000000
+}
+SMALL {
+	FONT: 9px Verdana, Arial; COLOR: #000000; LETTER-SPACING: 0.01em
+}
+P.bold {
+	FONT: bold 10px/1.5 Verdana, Arial; COLOR: #000000; LETTER-SPACING: 0.02em
+}
+P.note {
+	FONT: italic 10px/1.5 Verdana, Arial; COLOR: #000000; LETTER-SPACING: 0.02em
+}
+A {
+	color : #ffffff; background-color : #000000;TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #ffffff; BACKGROUND-COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	color : #ffffff; background-color : #000000;TEXT-DECORATION: none
+}
+A:hover {
+	color : #000000;
+	background-color : #ffffff;
+}
+A:active {
+	color : #ffffff; background-color : #000000;TEXT-DECORATION: none
+}
+A.grey {
+	color : #999999; background-color : #ffffff;TEXT-DECORATION: none
+}
+A.grey:link {
+	COLOR: #999999; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.grey:visited {
+	color : #999999; background-color : #ffffff;TEXT-DECORATION: none
+}
+A.grey:hover {
+	color : #999999; background-color : #ffffff;TEXT-DECORATION: underline
+}
+A.grey:active {
+	color : #999999; background-color : #ffffff;TEXT-DECORATION: underline 
+}
+A.lab {
+	color : #00c6ff; background-color : #ffffff;TEXT-DECORATION: none
+}
+A.lab:link {
+	COLOR: #00c6ff; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.lab:visited {
+	color : #00c6ff; background-color : #ffffff;TEXT-DECORATION: none
+}
+A.lab:hover {
+	color : #00c6ff;
+	background-color : #999999;
+}
+A.lab:active {
+	color : #00c6ff; background-color : #ffffff;TEXT-DECORATION: none
+}
+A.gallery {
+	color : #90ff00; background-color : #ffffff;TEXT-DECORATION: none
+}
+A.gallery:link {
+	COLOR: #90ff00; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.gallery:visited {
+	color : #90ff00; background-color : #ffffff;TEXT-DECORATION: none
+}
+A.gallery:hover {
+	color : #90ff00;
+	background-color : #999999;
+}
+A.gallery:active {
+	color : #90ff00; background-color : #ffffff;TEXT-DECORATION: none
+}
+.date {
+	FONT-SIZE: 10px; TEXT-TRANSFORM: uppercase; COLOR: #000000; FONT-FAMILY: Verdana, sans-serif; LETTER-SPACING: 0.04em
+}
+.permalink {
+	FONT-SIZE: 10px; COLOR: #000; FONT-FAMILY: Verdana, sans-serif; LETTER-SPACING: 0.02em
+}
+.time {
+	FONT-SIZE: 10px; COLOR: #000; FONT-FAMILY: Verdana, sans-serif; LETTER-SPACING: 0.02em
+}
+.lastpost {
+	FONT-SIZE: 11px; COLOR: #000; FONT-FAMILY: Verdana, sans-serif; LETTER-SPACING: 0.02em
+}
+.cam {
+	COLOR: #bcbec0; FONT-STYLE: italic; FONT-FAMILY: Verdana, sans-serif; font-size: 10px
+}
+.blogkommlink {
+	FONT-SIZE: 10px; COLOR: #000; FONT-FAMILY: Verdana, sans-serif;
+}
+.archivepage {
+	FONT-SIZE: 11px; COLOR: #000; FONT-FAMILY: Verdana, sans-serif; LETTER-SPACING: 0.02em; line-height:145%;
+}
+/*Box with the form elements*/
+div.blogkbox
+    {
+    width: 400px;
+    background:#fff;
+    color:#000;
+	border-top: #000000 1px solid
+	border-bottom: #000000 1px solid
+    padding-top: 5px;
+  	padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 20px 2px 2px 2px;
+}
+/*Box around the comments*/
+div.blogkcomments
+    {
+    width: 400px; 
+    background:#fff;
+    color:#000;
+	border-top: #000000 1px solid
+	border-bottom: #000000 1px solid
+    margin: 15px 2px 15px 2px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    font-size:11px;
+    }
+
+/*Box around the recent comments sidebar*/     
+div.blogkcommentsrecent
+    {
+    margin:0.1em 10px;
+    padding-top: 5px;
+  	padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    text-align:left;
+   
+    }
+
+
+span.blogkommlinks
+   {
+   /*empty for special link effect*/
+   }
+
+div.blogkLinks
+   {
+   /*empty for adjusting the [x comments]-link*/
+   }
+/*
+ now handling tableless forms
+ you don't have to edit from here 
+ this goes back to an article at
+ http://www.alistapart.com/articles/practicalcss/ 
+ describing a code concept by eric meyer.
+
+*/
+
+div.blogkrow
+	{
+  	clear: both;
+  	padding-top: 5px;
+  	padding-left: 5px;
+    padding-right: 5px;
+	padding-bottom: 5px;
+    FONT-SIZE: 11px; 
+	COLOR: #000; 
+	FONT-FAMILY: Verdana, sans-serif;
+  	text-align:left;
+	}
+
+div.blogkrow span.blogkLeftClmn
+    {
+    padding-top: 5px;
+    float: left;
+    width: 25%;
+    text-align: right;
+    }
+
+div.blogkrow span.blogkRightClmn
+   {
+   padding-top: 5px;
+   float: left;
+   text-align: left;
+   } 
+blockquote {
+	FONT: 13px/1.5 Verdana, Arial;
+	PADDING-LEFT: 10px;
+	PADDING-TOP: 5px;
+	margin: 5px 20px 10px 15px;
+	width: auto;
+	}
+.formfield2 {
+	font-weight: normal;
+	font-size: 11px;
+	background-color: #FFFFFF;
+	margin:0px;
+	padding:3px;
+	border:0px;
+	border-bottom: 1px dotted #000;
+}
+.textarea {
+	font-family:Verdana, sans-serif
+	font-weight: normal;
+	font-size: 11px;
+	line-height:145%;
+	background-color:#FFFFFF;
+	padding:3px;
+	border:1px solid #000;
+}
