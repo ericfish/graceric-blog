@@ -1,41 +1,41 @@
-ÔËÐÐ»·¾³£º
+ï»¿è¿è¡ŒçŽ¯å¢ƒï¼š
 
 PHP 4 & MySQL 4
 
 =============
 
-°²×°£º
+å®‰è£…ï¼š
 
-´ò¿ªindex.php×Ô¶¯½øÈë°²×°Ò³Ãæ¡£
+æ‰“å¼€index.phpè‡ªåŠ¨è¿›å…¥å®‰è£…é¡µé¢ã€‚
 
 =============
 
-ÊÖ¶¯³õÊ¼»¯£º
+æ‰‹åŠ¨åˆå§‹åŒ–ï¼š
 
-Èç¹û×Ô¶¯°²×°Ê§°Ü »òÕß ÄúÐèÒª´ÓGraceric Blog Release version 1.00 Éý¼¶£¬ÇëÖ´ÐÐÈçÏÂ²½Öè£º
+å¦‚æžœè‡ªåŠ¨å®‰è£…å¤±è´¥ æˆ–è€… æ‚¨éœ€è¦ä»ŽGraceric Blog Release version 1.00 å‡çº§ï¼Œè¯·æ‰§è¡Œå¦‚ä¸‹æ­¥éª¤ï¼š
 
 -------------------------
 
-a) ÐÂ°²×°£º
+a) æ–°å®‰è£…ï¼š
 
-1. ÔÚmysqlÖÐÖ´ÐÐ dbinstall/all.sql ½Å±¾ (ÈçÓÐÐèÒªÇë¸üÐÂ½Å±¾ÖÐÊý¾Ý¿âÇ°×ºµÈÊý¾Ý)¡£
+1. åœ¨mysqlä¸­æ‰§è¡Œ dbinstall/all.sql è„šæœ¬ (å¦‚æœ‰éœ€è¦è¯·æ›´æ–°è„šæœ¬ä¸­æ•°æ®åº“å‰ç¼€ç­‰æ•°æ®)ã€‚
 
-2. ´ò¿ªgc-config-sample.phpÎÄ¼þ£¬¸üÐÂÊý¾Ý¿âÐÅÏ¢¡¢ÓÃ»§¡¢ÃÜÂë¡¢Êý¾Ý¿âÇ°×ºÃû³Æ¡¢×Ö·û¼¯£¬²¢½«¸ÃÎÄ¼þÁí´æÎªgc-config.php¡£
+2. æ‰“å¼€gc-config-sample.phpæ–‡ä»¶ï¼Œæ›´æ–°æ•°æ®åº“ä¿¡æ¯ã€ç”¨æˆ·ã€å¯†ç ã€æ•°æ®åº“å‰ç¼€åç§°ã€å­—ç¬¦é›†ï¼Œå¹¶å°†è¯¥æ–‡ä»¶å¦å­˜ä¸ºgc-config.phpã€‚
 
 -------------------------
 
-b) Éý¼¶
+b) å‡çº§
 
-1. ÔÚmysqlÖÐÖ´ÐÐ dbinstall/upgrade-v-100.sql ½Å±¾ (ÈçÓÐÐèÒªÇë¸üÐÂ½Å±¾ÖÐÊý¾Ý¿âÇ°×ºµÈÊý¾Ý)¡£
-
-=============
-
-¹ÜÀí£º
-
-ä¯ÀÀhttp://localhost/admin/£¬Ä¬ÈÏÓÃ»§/ÃÜÂë: admin/admin¡£
-°²È«Æð¼û£¬ÇëÔÚµÚÒ»´ÎµÇÂ¼ºó¸ü¸ÄadminµÄÄ¬ÈÏÃÜÂë¡£
+1. åœ¨mysqlä¸­æ‰§è¡Œ dbinstall/upgrade-v-100.sql è„šæœ¬ (å¦‚æœ‰éœ€è¦è¯·æ›´æ–°è„šæœ¬ä¸­æ•°æ®åº“å‰ç¼€ç­‰æ•°æ®)ã€‚
 
 =============
 
-ÓÐÎÊÌâÁªÏµ: ericfish@gmail.com 
-»ò·ÃÎÊ: http://www.ericfish.com/graceric/
+ç®¡ç†ï¼š
+
+æµè§ˆhttp://localhost/admin/ï¼Œé»˜è®¤ç”¨æˆ·/å¯†ç : admin/adminã€‚
+å®‰å…¨èµ·è§ï¼Œè¯·åœ¨ç¬¬ä¸€æ¬¡ç™»å½•åŽæ›´æ”¹adminçš„é»˜è®¤å¯†ç ã€‚
+
+=============
+
+æœ‰é—®é¢˜è”ç³»: ericfish@gmail.com 
+æˆ–è®¿é—®: http://www.ericfish.com/graceric/ 
