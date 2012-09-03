@@ -1,46 +1,40 @@
-<?php 
+ï»¿<?php 
 Header("Content-type:image/png"); 
-//¶¨Òåheader£¬ÉùÃ÷Í¼Æ¬ÎÄ¼þ£¬×îºÃÊÇpng£¬ÎÞ°æÈ¨Ö®ÈÅ; 
-//Éú³ÉÐÂµÄËÄÎ»ÕûÊýÑéÖ¤Âë 
-session_start();//¿ªÆôsession; 
+
+session_start(); 
 $authnum_session = ''; 
 $str = 'abcdefghijkmnpqrstuvwxyz1234567890'; 
-//¶¨ÒåÓÃÀ´ÏÔÊ¾ÔÚÍ¼Æ¬ÉÏµÄÊý×ÖºÍ×ÖÄ¸; 
-$l = strlen($str); //µÃµ½×Ö´®µÄ³¤¶È; 
-//Ñ­»·Ëæ»ú³éÈ¡ËÄÎ»Ç°Ãæ¶¨ÒåµÄ×ÖÄ¸ºÍÊý×Ö; 
+
+$l = strlen($str); 
+
 for($i=1;$i<=4;$i++) 
 { 
 $num=rand(0,$l-1); 
-//Ã¿´ÎËæ»ú³éÈ¡Ò»Î»Êý×Ö;´ÓµÚÒ»¸ö×Öµ½¸Ã×Ö´®×î´ó³¤¶È, 
-//¼õ1ÊÇÒòÎª½ØÈ¡×Ö·ûÊÇ´Ó0¿ªÊ¼ÆðËã;ÕâÑù34×Ö·ûÈÎÒâ¶¼ÓÐ¿ÉÄÜÅÅÔÚÆäÖÐ; 
+
 $authnum_session.= $str[$num]; 
-//½«Í¨¹ýÊý×ÖµÃÀ´µÄ×Ö·ûÁ¬ÆðÀ´Ò»¹²ÊÇËÄÎ»; 
+
 } 
 session_register("authnum"); 
 $_SESSION['authnum'] = $authnum_session;
-//ÓÃsessionÀ´×öÑéÖ¤Ò²²»´í;×¢²ásession,Ãû³ÆÎªauthnum_session, 
-//ÆäËüÒ³ÃæÖ»Òª°üº¬ÁË¸ÃÍ¼Æ¬ 
-//¼´¿ÉÒÔÍ¨¹ý$_SESSION["authnum_session"]À´µ÷ÓÃ 
 
-//Éú³ÉÑéÖ¤ÂëÍ¼Æ¬£¬ 
 srand((double)microtime()*1000000); 
-$im = imagecreate(50,20);//Í¼Æ¬¿íÓë¸ß; 
-//Ö÷ÒªÓÃµ½ºÚ°×»ÒÈýÖÖÉ«; 
+$im = imagecreate(50,20);
+
 $black = ImageColorAllocate($im, 0,0,0); 
 $white = ImageColorAllocate($im, 255,255,255); 
 $gray = ImageColorAllocate($im, 200,200,200); 
-//½«ËÄÎ»ÕûÊýÑéÖ¤Âë»æÈëÍ¼Æ¬ 
+
 imagefill($im,68,30,$gray); 
-//Èç²»ÓÃ¸ÉÈÅÏß£¬×¢ÊÍ¾ÍÐÐÁË; 
+
 $li = ImageColorAllocate($im, 220,220,220); 
 for($i=0;$i<3;$i++) 
-{//¼ÓÈë3Ìõ¸ÉÈÅÏß;Ò²¿ÉÒÔ²»Òª;ÊÓÇé¿ö¶ø¶¨£¬ÒòÎª¿ÉÄÜÓ°ÏìÓÃ»§ÊäÈë; 
+{
 imageline($im,rand(0,30),rand(0,21),rand(20,40),rand(0,21),$li); 
 } 
-//×Ö·ûÔÚÍ¼Æ¬µÄÎ»ÖÃ; 
+
 imagestring($im, 5, 8, 2, $authnum_session, $white); 
 for($i=0;$i<90;$i++) 
-{//¼ÓÈë¸ÉÈÅÏóËØ 
+{
 imagesetpixel($im, rand()%70 , rand()%30 , $gray); 
 } 
 ImagePNG($im); 
