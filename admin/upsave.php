@@ -35,11 +35,11 @@ $filename="$MyFile_name";
 
 if (copy($MyFile,"../$filefolder/$filename")) {
 
-   echo "<h2><font color=#ff0000><a href=\"http://www.ericfish.com/albums/$filefolder/$filename\">$filename</a>�ļ��ϴ��ɹ���</font></h2><br><br>";
+   echo "<h2><font color=#ff0000><a href=\"http://www.ericfish.com/albums/$filefolder/$filename\">$filename</a> has been uploaded</font></h2><br><br>";
 
 }else {
 
-   echo "<h2><font color=#ff0000>�ļ��ϴ�ʧ�ܣ�</font></h2><br><br>";
+   echo "<h2><font color=#ff0000>upload failed</font></h2><br><br>";
 
 }
 unlink($MyFile);

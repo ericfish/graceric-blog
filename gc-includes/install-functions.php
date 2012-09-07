@@ -52,7 +52,7 @@ function gc_install_defaults($blog_title, $user_name, $user_email, $guessurl, $p
   tag_ID bigint(20) NOT NULL auto_increment,
   tag_name varchar(55)$db_charstring NOT NULL default '',
   tag_nicename varchar(200)$db_charstring NOT NULL default '',
-  tag_description longtext$db_charstring NOT NULL,
+  tag_description longtext$db_charstring NULL,
   tag_parent int(4) NOT NULL default '0',
   PRIMARY KEY  (tag_ID),
   KEY tag_nicename (tag_nicename)
@@ -190,45 +190,45 @@ function gc_install_defaults($blog_title, $user_name, $user_email, $guessurl, $p
 );"));
 	$gcdb->query(trans_sql_utf8($charset,"INSERT INTO `".$prefix."options` ( `option_id` , `blog_id` , `option_name` , `option_can_override` , `option_type` , `option_value` , `option_width` , `option_height` , `option_description` , `option_admin_level` , `autoload` ) 
 VALUES (
-NULL , '0', 'admin_email', 'Y', '1', '$user_email', '20', '8', '¹ÜÀíÔ±ÓÊ¼şµØÖ·', '1', 'yes'
+NULL , '0', 'admin_email', 'Y', '1', '$user_email', '20', '8', 'Admin Email', '1', 'yes'
 ), (
-NULL , '0', 'base_url', 'Y', '1', '$guessurl', '20', '8', 'Ê×Ò³µØÖ·(×îºóÃ»ÓĞĞ±¸Ü)', '1', 'yes'
+NULL , '0', 'base_url', 'Y', '1', '$guessurl', '20', '8', 'Base URL', '1', 'yes'
 ), (
-NULL , '0', 'home_post_number', 'Y', '1', '1', '20', '8', 'Ê×Ò³ÏÔÊ¾µÄblogÊı', '1', 'yes'
+NULL , '0', 'home_post_number', 'Y', '1', '1', '20', '8', 'Post Number in Homepage', '1', 'yes'
 ), (
-NULL , '0', 'blog_title', 'Y', '1', '$blog_title', '20', '8', 'ÍøÕ¾±êÌâ', '1', 'yes'
+NULL , '0', 'blog_title', 'Y', '1', '$blog_title', '20', '8', 'Blog Title', '1', 'yes'
 ), (
-NULL , '0', 'about_text', 'Y', '1', '<p> Write your self introduction in the <a href=admin>Admin</a> -&gt; <a href=admin/editabout.php>Edit About</a> Page.</p><p> 	Çëµ½<a href=admin>¹ÜÀíÒ³Ãæ</a> -&gt; <a href=admin/editabout.php>±à¼­¸öÈË¼ò½é</a> ÖĞ±à¼­ÄãµÄ¸öÈË¼ò½é¡£</p><p>ÓĞÎÊÌâÇëÁªÏµericfish[at]gmail.com</p>', '20', '8', '×ÔÎÒ½éÉÜÄÚÈİ', '1', 'yes'
+NULL , '0', 'about_text', 'Y', '1', '<p> Write your self introduction in the <a href=admin>Admin</a> -&gt; <a href=admin/editabout.php>Edit About</a> Page.</p><p> <a href=admin>admin home</a> -&gt; <a href=admin/editabout.php>Edit About Page</a></p><p>â€â€“ Author: ericfish[at]gmail.com</p>', '20', '8', 'About Text', '1', 'yes'
 ), (
-NULL , '0', 'prev_links', 'Y', '1', '1', '20', '8', 'Á´½Óµ½ÒÔÇ°µÄblogµÄÁ´½Ó¸öÊı', '1', 'yes'
+NULL , '0', 'prev_links', 'Y', '1', '1', '20', '8', 'Prev Links', '1', 'yes'
 ), (
-NULL , '0', 'blog_subtitle', 'Y', '1', '', '20', '8', 'ÍøÕ¾×Ó±êÌâ', '1', 'yes'
+NULL , '0', 'blog_subtitle', 'Y', '1', '', '20', '8', 'Blog Subtitle', '1', 'yes'
 ), (
-NULL , '0', 'template', 'Y', '1', 'default', '20', '8', 'BlogµÄÄ£°å', '1', 'yes'
+NULL , '0', 'template', 'Y', '1', 'default', '20', '8', 'Blog Template', '1', 'yes'
 ), (
-NULL , '0', 'admin_post_number', 'Y', '1', '10', '20', '8', '¹ÜÀí½çÃæÃ¿Ò³ÏÔÊ¾µÄBlogÊı', '1', 'yes'
+NULL , '0', 'admin_post_number', 'Y', '1', '10', '20', '8', 'Admin Post Number', '1', 'yes'
 ), (
-NULL , '0', 'about_title', 'Y', '1', 'About Me', '20', '8', '¸öÈË¼ò½é±êÌâ(¿ÉÑ¡)', '1', 'yes'
+NULL , '0', 'about_title', 'Y', '1', 'About Me', '20', '8', 'About Title', '1', 'yes'
 ), (
-NULL , '0', 'rss_link', 'Y', '1', '', '20', '8', 'RSSÁ´½ÓµØÖ·', '1', 'yes'
+NULL , '0', 'rss_link', 'Y', '1', '', '20', '8', 'RSS Link Address', '1', 'yes'
 ), (
-NULL , '0', 'charset', 'Y', '1', '$charset', '20', '8', '×Ö·û¼¯:utf-8|gb2312', '1', 'yes'
+NULL , '0', 'charset', 'Y', '1', '$charset', '20', '8', 'Charset:utf-8|gb2312', '1', 'yes'
 ), (
-NULL , '0', 'keywords', 'Y', '1', 'blog website', '20', '8', 'ÍøÕ¾¹Ø¼ü×Ö(¿Õ¸ñ·Ö¸ô)', '1', 'yes'
+NULL , '0', 'keywords', 'Y', '1', 'blog website', '20', '8', 'Keywords', '1', 'yes'
 ), (
-NULL , '0', 'blog_author', 'Y', '1', 'anonymous', '20', '8', '×÷ÕßĞÕÃû', '1', 'yes'
+NULL , '0', 'blog_author', 'Y', '1', 'anonymous', '20', '8', 'Blog Author Name', '1', 'yes'
 ), (
-NULL , '0', 'comment_email', 'Y', '1', 'no', '20', '8', 'ÊÇ·ñ·¢ËÍĞÂÁôÑÔÓÊ¼ş,yes:·¢ËÍ', '1', 'yes'
+NULL , '0', 'comment_email', 'Y', '1', 'no', '20', '8', 'Comment send to email', '1', 'yes'
 ), (
-NULL , '0', 'change_password_msg', 'Y', '1', 'ÄúÎ´¸ü¸Ä¹ıadminµÄ³õÊ¼ÃÜÂë£¬Õâ½«¸øÄúµÄÍøÕ¾´øÀ´°²È«Òş»¼¡£Çë¸øadminÓÃ»§Éè¶¨ĞÂµÄÃÜÂë¡£', '20', '8', '³õ´ÎµÇÂ¼µÄ¸ü¸ÄÃÜÂëÌáÊ¾', '1', 'yes'
+NULL , '0', 'change_password_msg', 'Y', '1', 'Please change your password in admin page', '20', '8', 'Change Password Message', '1', 'yes'
 ), (
-NULL , '0', 'gmt_offset', 'Y', '1', '8', '20', '8', 'ÄãËùÔÚµÄÊ±Çø', '1', 'yes'
+NULL , '0', 'gmt_offset', 'Y', '1', '8', '20', '8', 'GMT Offset', '1', 'yes'
 ), (
-NULL , '0', 'rss_language', 'Y', '1', 'zh-CHS', '20', '8', 'RssfeedÓïÑÔ:en|zh-CHS', '1', 'yes'
+NULL , '0', 'rss_language', 'Y', '1', 'zh-CHS', '20', '8', 'Rssfeed language:en|zh-CHS', '1', 'yes'
 ), (
-NULL , '0', 'rss_post_number', 'Y', '1', '10', '20', '8', 'RssÎÄÕÂÊı', '1', 'yes'
+NULL , '0', 'rss_post_number', 'Y', '1', '10', '20', '8', 'Rss Number', '1', 'yes'
 ), (
-NULL , '0', 'footer_text', 'Y', '1', '', '20', '8', '°æÈ¨ĞÅÏ¢', '1', 'yes'
+NULL , '0', 'footer_text', 'Y', '1', '', '20', '8', 'Footer Text', '1', 'yes'
 );"));
 	$gcdb->query(trans_sql_utf8($charset,"INSERT INTO `".$prefix."users` ( `ID` , `user_login` , `user_pass` , `user_firstname` , `user_lastname` , `user_nickname` , `user_nicename` , `user_icq` , `user_email` , `user_url` , `user_ip` , `user_domain` , `user_browser` , `user_registered` , `user_level` , `user_aim` , `user_msn` , `user_yim` , `user_idmode` , `user_activation_key` , `user_status` , `user_description` ) 
 VALUES (

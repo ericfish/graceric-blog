@@ -38,8 +38,8 @@ auth_redirect();
 </tr>
 <tr>
 <td colspan='2' align="center">
-<input type="Submit" value=" �ϴ� " class=iwhite> 
-<input type="reset" value=" ���� " class=iwhite>
+<input type="Submit" value="Submit" class=iwhite> 
+<input type="reset" value="Reset" class=iwhite>
 </td>
 </tr>
 </table>
