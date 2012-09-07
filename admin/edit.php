@@ -67,10 +67,10 @@ else {
 <script language="javascript" type="text/javascript">
 // Notice: The simple theme does not use all options some of them are limited to the advanced theme
 tinyMCE.init({
+mode : "textareas",
 theme : "advanced",
-mode : "exact",
-elements : "EditorAccessibility",
-save_callback : "customSave",
+//elements : "EditorAccessibility",
+//save_callback : "customSave",
 //handle_event_callback: "ctlent",
 // mode : "textareas",
 width : "100%",
