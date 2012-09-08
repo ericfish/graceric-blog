@@ -162,7 +162,7 @@ function focusTo(obj, selectFrom) {
            
               <THEAD id="tr_list-view-tbody">
 <tr><td>
-<textarea rows="9" name="EditorAccessibility" id="EditorAccessibility" style="width: 100%; word-break: break-all"><?php echo($post_content); ?></textarea>
+<textarea rows="9" name="EditorAccessibility" id="EditorAccessibility" style="width: 100%; word-break: break-all;"><?php echo($post_content); ?></textarea>
 </td></tr>
               </THEAD>
               <TBODY>
