@@ -2,19 +2,19 @@ BODY {
 	BACKGROUND-COLOR: #fff
 }
 P.title {
-	FONT: bold 9px/1.5 Verdana, Arial; COLOR: #000000; LETTER-SPACING: 0.02em
+	FONT: bold 9px Verdana, Arial; COLOR: #000000; LETTER-SPACING: 0.02em
 }
 P {
-	FONT: 13px/1.5 Verdana, Arial; COLOR: #000000
+	FONT: 13px Verdana, Arial; COLOR: #000000; LINE-HEIGHT: 180%
 }
 SMALL {
 	FONT: 9px Verdana, Arial; COLOR: #000000; LETTER-SPACING: 0.01em
 }
 P.bold {
-	FONT: bold 10px/1.5 Verdana, Arial; COLOR: #000000; LETTER-SPACING: 0.02em
+	FONT: bold 10px Verdana, Arial; COLOR: #000000; LETTER-SPACING: 0.02em
 }
 P.note {
-	FONT: italic 10px/1.5 Verdana, Arial; COLOR: #000000; LETTER-SPACING: 0.02em
+	FONT: italic 10px Verdana, Arial; COLOR: #000000; LETTER-SPACING: 0.02em
 }
 A {
 	color : #ffffff; background-color : #000000;TEXT-DECORATION: none
