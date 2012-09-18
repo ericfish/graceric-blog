@@ -8,10 +8,10 @@
 *  Subversion Keywords:
 *
 *  $Id: tags.php 13 2007-03-30 07:52:56Z ericfish $
-*  $LastChangedDate: 2007-03-30 15:52:56 +0800 (星期五, 30 三月 2007) $
+*  $LastChangedDate: 2007-03-30 15:52:56 +0800 (Fri, 30 Mar 2007) $
 *  $LastChangedRevision: 13 $
 *  $LastChangedBy: ericfish $
-*  $URL: https://graceric.googlecode.com/svn/trunk/Blank/gc-themes/default/tags.php $
+*  $URL: https://graceric.googlecode.com/svn/trunk/gc-themes/default/tags.php $
 */
 ?>
 
@@ -27,7 +27,7 @@
 	
 <script language=javascript>
 
-e = document.getElementsByTagName("A");
+e = document.getElementsByTagName("a");
 
 for(i=0; i < e.length; i++)
 {

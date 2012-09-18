@@ -8,10 +8,10 @@
 *  Subversion Keywords:
 *
 *  $Id: functions.php 51 2007-04-29 06:18:46Z ericfish $
-*  $LastChangedDate: 2007-04-29 14:18:46 +0800 (星期日, 29 四月 2007) $
+*  $LastChangedDate: 2007-04-29 14:18:46 +0800 (Sun, 29 Apr 2007) $
 *  $LastChangedRevision: 51 $
 *  $LastChangedBy: ericfish $
-*  $URL: https://graceric.googlecode.com/svn/trunk/Blank/gc-includes/functions.php $
+*  $URL: https://graceric.googlecode.com/svn/trunk/gc-includes/functions.php $
 */
 
 /*
@@ -428,7 +428,7 @@ function recent_post_links(){
     		{
     		     $request_prv .= " AND show_in_home = 'yes'";
     		}
-    		$request_prv .= " ORDER BY a.post_date,a.ID DESC";
+    		$request_prv .= " ORDER BY a.post_date DESC,a.ID DESC";
     		$request_prv .= " LIMIT ".get_option('prev_links');
     		$prv_posts = $gcdb->get_results($request_prv);
     		
