@@ -8,7 +8,7 @@
 *  Subversion Keywords:
 *
 *  $Id: comment.php 58 2008-02-12 12:32:02Z ericfish@gmail.com $
-*  $LastChangedDate: 2012-02-05 20:32:02 +0800 (ĞÇÆÚ¶ş, 12 ¶şÔÂ 2008) $
+*  $LastChangedDate: 2012-02-05 20:32:02 +0800 (â€“Â«âˆ†â„âˆ‚Ë›, 12 âˆ‚Ë›â€˜Â¬ 2008) $
 *  $LastChangedRevision: 58 $
 *  $LastChangedBy: ericfish@gmail.com $
 *  $URL: https://graceric.googlecode.com/svn/trunk/Blank/gc-themes/default/comment.php $
@@ -40,7 +40,7 @@
   				<textarea class="textarea" name="comm_content" rows="12" cols="40" tabindex="4" ></textarea>
 
 <br/><br/>
-<img src="./gc-includes/comment-code.php" border="0"> 
+<img src="gc-includes/comment-code.php" border="0"> 
 <input class="formfield2" type="text" name="comm_code"  size="6" value="" /> (validation code)
 
 				<br/><br/>

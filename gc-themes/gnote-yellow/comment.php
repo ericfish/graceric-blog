@@ -23,7 +23,7 @@
   			<span class="blogkRightClmn">
   				<textarea class="textarea" name="comm_content" rows="12" cols="40" tabindex="4" ></textarea>
 				<br/><br/>
-				<img src="./gc-includes/comment-code.php" border="0"> 
+				<img src="gc-includes/comment-code.php" border="0"> 
 				<input class="formfield2" type="text" name="comm_code"  size="6" value="" /> (validation code)
 
 				<br/><br/>
