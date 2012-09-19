@@ -40,11 +40,11 @@ function initPage() {
 			$post_status = $p1_post->post_status;
 			$post_date = $p1_post->post_date_fmt;
 			
-			echo("<tr><td><input type=\"checkbox\" name=\"C1\" value=\"$post_ID\"></td><td><span class=\"tr_pseudo-link\" title=\"Click to edit this page\">");
+			echo("<tr><td><input type=\"checkbox\" name=\"C1\" value=\"$post_ID\"></td><td><span width=400 class=\"tr_pseudo-link\" title=\"Click to edit this page\">");
 			echo("<A href=\"edit.php?q=$post_ID\">$post_title</A>");
 			echo("</span><span class=\"tr_revision-state tr_revision-state-3\">");
 			echo(" $post_status");
-			echo("</span></td><td><a class=\"tr_published-page-url\" title=\"Click to see this page\" target=\"_blank\" href=\"".get_permalink($post_ID)."\">");
+			echo("</span></td><td width=400><a class=\"tr_published-page-url\" title=\"Click to see this page\" target=\"_blank\" href=\"".get_permalink($post_ID)."\">");
 			echo(get_permalink($post_ID));
 			echo("</a></td><td>");
 			echo("$post_date");
@@ -112,11 +112,11 @@ function processSearch($keyword){
     		$post_status = $s_post->post_status;
     		$post_date = $s_post->post_date_fmt;
     		
-    		$text.="<tr><td><input type=\"checkbox\" name=\"C1\" value=\"$post_ID\"></td><td><span class=\"tr_pseudo-link\" title=\"Click to edit this page\">";
+    		$text.="<tr><td><input type=\"checkbox\" name=\"C1\" value=\"$post_ID\"></td><td><span width=400 class=\"tr_pseudo-link\" title=\"Click to edit this page\">";
     		$text.="<A href=\"edit.php?q=$post_ID\">$post_title</A>";
     		$text.="</span><span class=\"tr_revision-state tr_revision-state-3\">";
     		$text.=" $post_status";
-    		$text.="</span></td><td><a class=\"tr_published-page-url\" title=\"Click to see this page\" target=\"_blank\" href=\"".get_permalink($post_ID)."\">";
+    		$text.="</span></td><td width=400><a class=\"tr_published-page-url\" title=\"Click to see this page\" target=\"_blank\" href=\"".get_permalink($post_ID)."\">";
     		$text.=get_permalink($post_ID);
     		$text.="</a></td><td>";
     		$text.="$post_date";
@@ -187,11 +187,11 @@ function nextPage($begin_post_id){
     		$post_status = $p1_post->post_status;
     		$post_date = $p1_post->post_date_fmt;
     		
-    		$text.="<tr><td><input type=\"checkbox\" name=\"C1\" value=\"$post_ID\"></td><td><span class=\"tr_pseudo-link\" title=\"Click to edit this page\">";
+    		$text.="<tr><td><input type=\"checkbox\" name=\"C1\" value=\"$post_ID\"></td><td><span width=400 class=\"tr_pseudo-link\" title=\"Click to edit this page\">";
     		$text.="<A href=\"edit.php?q=$post_ID\">$post_title</A>";
     		$text.="</span><span class=\"tr_revision-state tr_revision-state-3\">";
     		$text.=" $post_status";
-    		$text.="</span></td><td><a class=\"tr_published-page-url\" title=\"Click to see this page\" target=\"_blank\" href=\"".get_permalink($post_ID)."\">";
+    		$text.="</span></td><td width=400><a class=\"tr_published-page-url\" title=\"Click to see this page\" target=\"_blank\" href=\"".get_permalink($post_ID)."\">";
     		$text.=get_permalink($post_ID);
     		$text.="</a></td><td>";
     		$text.="$post_date";
@@ -358,11 +358,11 @@ function refreshPage($begin_id) {
     		$post_status = $p1_post->post_status;
     		$post_date = $p1_post->post_date;
     		
-    		$text.="<tr><td><input type=\"checkbox\" name=\"C1\" value=\"$post_ID\"></td><td><span class=\"tr_pseudo-link\" title=\"Click to edit this page\">";
+    		$text.="<tr><td><input type=\"checkbox\" name=\"C1\" value=\"$post_ID\"></td><td><span width=400 class=\"tr_pseudo-link\" title=\"Click to edit this page\">";
     		$text.="<A href=\"edit.php?q=$post_ID\">$post_title</A>";
     		$text.="</span><span class=\"tr_revision-state tr_revision-state-3\">";
     		$text.=" $post_status";
-    		$text.="</span></td><td><a class=\"tr_published-page-url\" title=\"Click to see this page\" target=\"_blank\" href=\"".get_permalink($post_ID)."\">";
+    		$text.="</span></td><td width=400><a class=\"tr_published-page-url\" title=\"Click to see this page\" target=\"_blank\" href=\"".get_permalink($post_ID)."\">";
     		$text.=get_permalink($post_ID);
     		$text.="</a></td><td>";
     		$text.="$post_date";

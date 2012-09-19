@@ -192,7 +192,7 @@ TABLE#tr_unpublished-warning {
 	WIDTH: 100%
 }
 #tr_list-view TD {
-	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 83%; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: top; PADDING-TOP: 2px; BORDER-BOTTOM: #bbb 1px solid
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 83%; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: bottom; PADDING-TOP: 2px; BORDER-BOTTOM: #bbb 1px solid
 }
 #tr_list-view .tr_published-page-url {
 	CURSOR: pointer; COLOR: #606060; TEXT-DECORATION: underline
@@ -292,7 +292,7 @@ textarea, input, select {
 	font-family: Verdana, Arial;
 	FONT-SIZE: 14px;
 	margin: 1px;
-	padding: 3px;
+	padding: 1px;
 }
 
 .submit input, .submit input:focus, .button {
