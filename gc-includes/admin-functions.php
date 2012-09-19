@@ -8,7 +8,7 @@
 *  Subversion Keywords:
 *
 *  $Id: admin-functions.php 38 2007-04-10 05:28:52Z ericfish $
-*  $LastChangedDate: 2007-04-10 13:28:52 +0800 (æ˜ŸæœŸäºŒ, 10 å››æœˆ 2007) $
+*  $LastChangedDate: 2007-04-10 13:28:52 +0800 (ÃŠÃ²Ã¼ÃŠÃºÃ¼â€°âˆ«Ã¥, 10 Ã‚ÃµÃµÃŠÃºÃ  2007) $
 *  $LastChangedRevision: 38 $
 *  $LastChangedBy: ericfish $
 *  $URL: https://graceric.googlecode.com/svn/trunk/Blank/gc-includes/admin-functions.php $
@@ -722,7 +722,7 @@ function saveEditUser($user_id,$user_pass)
     	$objResponse->addAssign("lo","style.background",'green');
 	}
 	else {
-    	$objResponse->addAssign("lo","innerHTML",'ÃÜÂë²»ÄÜÎª¿Õ');
+    	$objResponse->addAssign("lo","innerHTML",'âˆšâ€¹Â¬ÃŽâ‰¤ÂªÆ’â€¹Å’â„¢Ã¸â€™');
     	$objResponse->addAssign("lo","style.background",'#c44');  
 	}
 
@@ -736,12 +736,12 @@ function saveAddUser($user_name,$user_pass)
 	
 	if ($user_name=="")
 	{
-    	$objResponse->addAssign("lo","innerHTML",'ÓÃ»§Ãû²»ÄÜÎª¿Õ');
+    	$objResponse->addAssign("lo","innerHTML",'â€âˆšÂªÃŸâˆšËšâ‰¤ÂªÆ’â€¹Å’â„¢Ã¸â€™');
     	$objResponse->addAssign("lo","style.background",'#c44');  
 	}
 	elseif($user_pass=="")
 	{
-    	$objResponse->addAssign("lo","innerHTML",'ÃÜÂë²»ÄÜÎª¿Õ');
+    	$objResponse->addAssign("lo","innerHTML",'âˆšâ€¹Â¬ÃŽâ‰¤ÂªÆ’â€¹Å’â„¢Ã¸â€™');
     	$objResponse->addAssign("lo","style.background",'#c44');  
 	}
 	else {
@@ -820,7 +820,7 @@ function saveEditLink($link_ID,$link_name,$link_url){
     	$objResponse->addAssign("lo","style.background",'green');
 	}
 	else {
-    	$objResponse->addAssign("lo","innerHTML",'Ãû³ÆºÍURL²»ÄÜÎª¿Õ');
+    	$objResponse->addAssign("lo","innerHTML",'âˆšËšâ‰¥âˆ†âˆ«Ã•URLâ‰¤ÂªÆ’â€¹Å’â„¢Ã¸â€™');
     	$objResponse->addAssign("lo","style.background",'#c44');  
 	}
 
@@ -843,7 +843,7 @@ function saveDeleteLink($link_ID){
     	$objResponse->addAssign("lo","style.background",'green');
 	}
 	else {
-    	$objResponse->addAssign("lo","innerHTML",'ÎÞ·¨É¾³ý¸ÃÁ´½Ó');
+    	$objResponse->addAssign("lo","innerHTML",'Å’ï¬âˆ‘Â®â€¦Ã¦â‰¥ËâˆâˆšÂ¡Â¥Î©â€');
     	$objResponse->addAssign("lo","style.background",'#c44');
 	}
 
@@ -857,12 +857,12 @@ function saveAddLink($link_name,$link_url)
 	
 	if ($link_name=="")
 	{
-    	$objResponse->addAssign("lo","innerHTML",'Á´½ÓÃû³Æ²»ÄÜÎª¿Õ');
+    	$objResponse->addAssign("lo","innerHTML",'Â¡Â¥Î©â€âˆšËšâ‰¥âˆ†â‰¤ÂªÆ’â€¹Å’â„¢Ã¸â€™');
     	$objResponse->addAssign("lo","style.background",'#c44');  
 	}
 	elseif($link_url=="")
 	{
-    	$objResponse->addAssign("lo","innerHTML",'URL²»ÄÜÎª¿Õ');
+    	$objResponse->addAssign("lo","innerHTML",'URLâ‰¤ÂªÆ’â€¹Å’â„¢Ã¸â€™');
     	$objResponse->addAssign("lo","style.background",'#c44');  
 	}
 	else {
@@ -937,7 +937,7 @@ function saveEditTag($tag_ID,$tag_name,$tag_description,$tag_parent){
     	$objResponse->addAssign("lo","style.background",'green');
 	}
 	else {
-    	$objResponse->addAssign("lo","innerHTML",'TAGÃû³Æ²»ÄÜÎª¿Õ');
+    	$objResponse->addAssign("lo","innerHTML",'TAGâˆšËšâ‰¥âˆ†â‰¤ÂªÆ’â€¹Å’â„¢Ã¸â€™');
     	$objResponse->addAssign("lo","style.background",'#c44');  
 	}
 
@@ -960,7 +960,7 @@ function saveNoShowTag($tag_ID){
     	$objResponse->addAssign("lo","style.background",'green');
 	}
 	else {
-    	$objResponse->addAssign("lo","innerHTML",'ÎÞ·¨Òþ²Ø¸ÃTAG');
+    	$objResponse->addAssign("lo","innerHTML",'Å’ï¬âˆ‘Â®â€œË›â‰¤Ã¿âˆâˆšTAG');
     	$objResponse->addAssign("lo","style.background",'#c44');
 	}
 
@@ -974,7 +974,7 @@ function saveAddTag($tag_name,$tag_description,$tag_parent)
 	
 	if ($tag_name=="")
 	{
-    	$objResponse->addAssign("lo","innerHTML",'TAGÃû³Æ²»ÄÜÎª¿Õ');
+    	$objResponse->addAssign("lo","innerHTML",'TAGâˆšËšâ‰¥âˆ†â‰¤ÂªÆ’â€¹Å’â„¢Ã¸â€™');
     	$objResponse->addAssign("lo","style.background",'#c44');  
 	}
 	else {
@@ -1047,7 +1047,7 @@ function saveEditSpam($spam_ID,$spam_value,$spam_type){
     	$objResponse->addAssign("lo","style.background",'green');
 	}
 	else {
-    	$objResponse->addAssign("lo","innerHTML",'ÊäÈë´íÎó');
+    	$objResponse->addAssign("lo","innerHTML",'Â â€°Â»ÃŽÂ¥ÃŒÅ’Ã›');
     	$objResponse->addAssign("lo","style.background",'#c44');  
 	}
 
@@ -1070,7 +1070,7 @@ function saveDeleteSpam($spam_ID){
     	$objResponse->addAssign("lo","style.background",'green');
 	}
 	else {
-    	$objResponse->addAssign("lo","innerHTML",'ÎÞ·¨É¾³ý');
+    	$objResponse->addAssign("lo","innerHTML",'Å’ï¬âˆ‘Â®â€¦Ã¦â‰¥Ë');
     	$objResponse->addAssign("lo","style.background",'#c44');
 	}
 
@@ -1084,12 +1084,12 @@ function saveAddSpam($spam_value,$spam_type)
 	
 	if ($spam_value=="")
 	{
-    	$objResponse->addAssign("lo","innerHTML",'Öµ²»ÄÜÎª¿Õ');
+    	$objResponse->addAssign("lo","innerHTML",'Ã·Âµâ‰¤ÂªÆ’â€¹Å’â„¢Ã¸â€™');
     	$objResponse->addAssign("lo","style.background",'#c44');  
 	}
 	elseif($spam_type!="name"&&$spam_type!="email"&&$spam_type!="text"&&$spam_type!="ip")
 	{
-    	$objResponse->addAssign("lo","innerHTML",'ÀàÐÍ´íÎó');
+    	$objResponse->addAssign("lo","innerHTML",'Â¿â€¡â€“Ã•Â¥ÃŒÅ’Ã›');
     	$objResponse->addAssign("lo","style.background",'#c44');  
 	}
 	else {
@@ -1157,7 +1157,7 @@ function saveEditX($x_ID,$post_ID,$x_name){
     	$objResponse->addAssign("lo","style.background",'green');
 	}
 	else {
-    	$objResponse->addAssign("lo","innerHTML",'ÊäÈë´íÎó');
+    	$objResponse->addAssign("lo","innerHTML",'Â â€°Â»ÃŽÂ¥ÃŒÅ’Ã›');
     	$objResponse->addAssign("lo","style.background",'#c44');  
 	}
 
@@ -1180,7 +1180,7 @@ function saveDeleteX($x_ID){
     	$objResponse->addAssign("lo","style.background",'green');
 	}
 	else {
-    	$objResponse->addAssign("lo","innerHTML",'ÎÞ·¨É¾³ý');
+    	$objResponse->addAssign("lo","innerHTML",'Å’ï¬âˆ‘Â®â€¦Ã¦â‰¥Ë');
     	$objResponse->addAssign("lo","style.background",'#c44');
 	}
 
@@ -1194,12 +1194,12 @@ function saveAddX($post_ID,$x_name)
 	
 	if ($post_ID!=""&&is_int($post_ID))
 	{
-    	$objResponse->addAssign("lo","innerHTML",'Öµ²»ÄÜÎª¿ÕÇÒ±ØÐèÊÇÊý×Ö');
+    	$objResponse->addAssign("lo","innerHTML",'Ã·Âµâ‰¤ÂªÆ’â€¹Å’â„¢Ã¸â€™Â«â€œÂ±Ã¿â€“Ã‹Â Â«Â Ëâ—ŠÃ·');
     	$objResponse->addAssign("lo","style.background",'#c44');  
 	}
 	elseif($x_name==""||($x_name=="q"||$x_name=="archive"||$x_name=="search"||$x_name=="about"||$x_name=="links"||$x_name=="tags"||$x_name=="tag"||$x_name=="month"||$x_name=="comment"||$x_name=="feed"))
 	{
-    	$objResponse->addAssign("lo","innerHTML",'¹Ø¼ü×Ö´íÎó');
+    	$objResponse->addAssign("lo","innerHTML",'Ï€Ã¿ÂºÂ¸â—ŠÃ·Â¥ÃŒÅ’Ã›');
     	$objResponse->addAssign("lo","style.background",'#c44');
 	}
 	else {
@@ -1223,14 +1223,13 @@ function saveAddX($post_ID,$x_name)
 
 /**** All Pages Template function ****/
 function getNavBar() {
-    $navBar = '<A href="index.php">Edit Posts</A> | 
-                <A href="settings.php">Site Settings</A> | 
-                <A href="edituser.php">My Account</A> | 
-                <A href="editabout.php">Edit About</A> | 
-                <A href="editlinks.php">Edit Links</A> | 
-                <A href="edittags.php">Edit Tags</A> | 
-                <A href="editspams.php">Spams</A> | 
-                <A href="editx.php">X</A> | 
+    $navBar = '<A href="index.php">Posts</A> | 
+                <A href="settings.php">Settings</A> | 
+                <A href="edituser.php">Accounts</A> | 
+                <A href="editabout.php">About</A> | 
+                <A href="editlinks.php">Links</A> | 
+                <A href="editspams.php">Spam Rules</A> | 
+                <A href="upload.php" target="_blank">Upload File</A> | 
                 <A href="logout.php">Sign Out</A>&nbsp;&nbsp;';
     echo $navBar;
 }
