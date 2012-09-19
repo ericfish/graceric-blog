@@ -22,7 +22,7 @@ function initPage() {
 	
 	$begin_id = 0;
 	
-	$request = "SELECT ID,post_title,DATE_FORMAT(post_date, '%b %d, %Y') AS post_date_fmt,post_date,post_status FROM $gcdb->posts ORDER BY ID DESC LIMIT $begin_id, $end_id";
+	$request = "SELECT ID,post_title,DATE_FORMAT(post_date, '%b %d, %Y') AS post_date_fmt,post_date,post_status FROM $gcdb->posts ORDER BY post_date DESC LIMIT $begin_id, $end_id";
 	
 	$base_url = get_option('base_url');
 	
@@ -143,7 +143,7 @@ function nextPage($begin_post_id){
 	
 	$begin_post_id += get_option('admin_post_number');
 	
-	$request = "SELECT ID,post_title,DATE_FORMAT(post_date, '%b %d, %Y') AS post_date_fmt,post_date,post_status FROM $gcdb->posts ORDER BY ID DESC LIMIT $begin_post_id, $end_id";
+	$request = "SELECT ID,post_title,DATE_FORMAT(post_date, '%b %d, %Y') AS post_date_fmt,post_date,post_status FROM $gcdb->posts ORDER BY post_date DESC LIMIT $begin_post_id, $end_id";
 	
     $gcdb->query("SET NAMES 'gb2312'");
 	$p1_posts = $gcdb->get_results($request);
@@ -151,7 +151,7 @@ function nextPage($begin_post_id){
 	{
 	   $begin_post_id -= get_option('admin_post_number');
 	
-	   $request = "SELECT ID,post_title,DATE_FORMAT(post_date, '%b %d, %Y') AS post_date_fmt,post_date,post_status FROM $gcdb->posts ORDER BY ID DESC LIMIT $begin_post_id, $end_id";
+	   $request = "SELECT ID,post_title,DATE_FORMAT(post_date, '%b %d, %Y') AS post_date_fmt,post_date,post_status FROM $gcdb->posts ORDER BY post_date DESC LIMIT $begin_post_id, $end_id";
 	
 	   $p1_posts = $gcdb->get_results($request);
 	}
@@ -219,7 +219,7 @@ function prevPage($begin_post_id){
 	if($begin_post_id<0)
 		$begin_post_id = 0;
 	
-	$request = "SELECT ID,post_title,DATE_FORMAT(post_date, '%b %d, %Y') AS post_date_fmt,post_date,post_status FROM $gcdb->posts ORDER BY ID DESC LIMIT $begin_post_id, $end_id";
+	$request = "SELECT ID,post_title,DATE_FORMAT(post_date, '%b %d, %Y') AS post_date_fmt,post_date,post_status FROM $gcdb->posts ORDER BY post_date DESC LIMIT $begin_post_id, $end_id";
 	
     $gcdb->query("SET NAMES 'gb2312'");
 	$p1_posts = $gcdb->get_results($request);
@@ -317,7 +317,7 @@ function updateDelete($post_id) {
 function refreshPage($begin_id) {
 	global $gcdb,$end_id;
 		
-	$request = "SELECT ID,post_title,DATE_FORMAT(post_date, '%b %d, %Y') AS post_date_fmt,post_date,post_status FROM $gcdb->posts ORDER BY ID DESC LIMIT $begin_id, $end_id";
+	$request = "SELECT ID,post_title,DATE_FORMAT(post_date, '%b %d, %Y') AS post_date_fmt,post_date,post_status FROM $gcdb->posts ORDER BY post_date DESC LIMIT $begin_id, $end_id";
 	
 	$base_url = get_option('base_url');
 	
