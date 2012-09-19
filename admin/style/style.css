@@ -2,19 +2,22 @@ BODY {
 	MARGIN: 0px 0px 0px 5px; COLOR: black; BACKGROUND-COLOR: #E0ECFF
 }
 BODY {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Verdana, Arial;
 }
 TD {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Verdana, Arial;
 }
 TH {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Verdana, Arial;
 }
 A:link {
-	COLOR: #00c
+	COLOR: #00c;TEXT-DECORATION: none
 }
 A:visited {
-	COLOR: #00c
+	COLOR: #00c;TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #000;TEXT-DECORATION: none
 }
 H1 {
 	CLEAR: right; MARGIN-TOP: 0px; FONT-WEIGHT: normal; FONT-SIZE: 115%; MARGIN-BOTTOM: 0px
