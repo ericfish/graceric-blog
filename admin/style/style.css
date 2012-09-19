@@ -23,13 +23,13 @@ H1 {
 	CLEAR: right; MARGIN-TOP: 0px; FONT-WEIGHT: normal; FONT-SIZE: 115%; MARGIN-BOTTOM: 0px
 }
 INPUT.tr_button {
-	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 83%; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 95%; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
 }
 INPUT.tr_submit {
-	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 83%; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 95%; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
 }
 INPUT.tr_submit {
-	FONT-WEIGHT: bold
+	FONT-WEIGHT: normal
 }
 #tr_logo {
 	MARGIN: 11px 0.7em 11px 0px
@@ -92,7 +92,8 @@ TABLE {
 	FONT-WEIGHT: bold; CURSOR: pointer; COLOR: #00c; TEXT-DECORATION: underline
 }
 THEAD IMG {
-	MARGIN-LEFT: 4px
+	MARGIN-LEFT: 4px;
+	vertical-align: bottom;
 }
 .tr_selectors {
 	WHITE-SPACE: nowrap
@@ -288,7 +289,8 @@ textarea, input, select {
 	background: #f4f4f4;
 	border: 1px solid #b2b2b2;
 	color: #000;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Verdana, Arial;
+	FONT-SIZE: 14px;
 	margin: 1px;
 	padding: 3px;
 }
