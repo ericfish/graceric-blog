@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="./<?=TPPATH?>/frame.css" type="text/css" />
   <link rel="stylesheet" href="./<?=TPPATH?>/color.css" type="text/css" />
   <link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="<?get_blog_rsslink();?>"></link>
-  <link rel="shortcut icon" href="http://www.ericfish.com/gc-themes/favicon.png" type="image/x-icon"/>
+  <link rel="shortcut icon" href="./gc-themes/favicon.png" type="image/x-icon"/>
   <title><?php the_title(); ?></title>
   
 <?php 
